@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Serenity Karavan | Türkiye'nin En Kaliteli Yerli Çekme Karavan Üreticisi</title>
+<meta name="description" content="Serenity Karavan — ithal kalitesinde yerli üretim çekme karavan. Marin malzeme, XPS-CTP yalıtım, 12V tam donanım. 333 Smile, 360 Moodz, 380 Unique, 423 Utopia modelleri."/>
+<meta name="keywords" content="serenity karavan, çekme karavan, yerli karavan, Türk karavan, kaliteli karavan, en iyi yerli karavan, karavan fiyatları, karavan modelleri, karavan satışı, karavan üreticisi, ithal kalite karavan, lüks karavan Türkiye, marin karavan, 4 mevsim karavan, XPS yalıtım karavan, 12V karavan, güneş enerjili karavan, off grid karavan, karavan fiyat listesi, en kaliteli Türk karavan, Bursa karavan, çekme karavan satın al, en iyi karavan markası"/>
+<meta name="robots" content="index, follow"/>
+<meta name="geo.region" content="TR-16"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Serenity Karavan | İthal Kalitesinde Yerli Üretim"/>
+<meta property="og:description" content="Türkiye'nin en kaliteli yerli çekme karavanı. Marin malzeme, XPS yalıtım, güneş enerjisi."/>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Serenity Karavan","telephone":"+905322129316","address":{"@type":"PostalAddress","addressLocality":"Bursa","addressCountry":"TR"},"url":"https://serenitykaravan.com","sameAs":["https://www.instagram.com/serenitykaravan/","https://www.facebook.com/serenitykaravan","https://www.youtube.com/@SerenityKaravan"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Serenity neden diğer yerli karavanlardan farklı?","acceptedAnswer":{"@type":"Answer","text":"Serenity kendi özel XPS-CTP panellerini kullanır, tüm tesisatı marin standartlarında kurar ve her modelde özgün tasarım uygular."}},{"@type":"Question","name":"Karavanlar 4 mevsim kullanıma uygun mu?","acceptedAnswer":{"@type":"Answer","text":"Evet. −20°C ile +50°C arasında performans sağlayan XPS-CTP panel, dizel ısıtıcı ve çok katmanlı yalıtım ile kış kampçılığı da konforludur."}},{"@type":"Question","name":"12V sistem ne demek?","acceptedAnswer":{"@type":"Answer","text":"Tüm cihazlar 12V DC ile çalışır. Güneş panelinden gelen enerji doğrudan kullanılır, inverter kaybı olmaz. Günlerce şebeke bağımsız yaşanabilir."}}]}
+</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:#F8FAFC;
+  color:#0D2B3E;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+
+:root{
+  --ink:     #0D2B3E;
+  --ocean:   #0A3D5C;
+  --deep:    #061E2F;
+  --teal:    #2BB5C8;
+  --teal2:   #1A9AAB;
+  --sky:     #EBF7FA;
+  --white:   #FFFFFF;
+  --mist:    #6B93A8;
+  --gold:    #C8901E;
+  --sand:    #F5F0E6;
+  --green:   #25D366;
+}
+
+/* ── NAV ── */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:0 48px;height:72px;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:background .4s,backdrop-filter .4s,box-shadow .4s;
+}
+#nav.scrolled{
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(16px);
+  box-shadow:0 1px 0 rgba(13,43,62,.08);
+}
+.nav-logo{display:flex;align-items:center;gap:14px;cursor:pointer}
+.nav-logo-img{
+  width:44px;height:44px;
+  object-fit:contain;
+  /* Logo koyu arka planda zaten görünür; scrolled'da filtre yok çünkü logo kendi renklerini taşıyor */
+  filter:brightness(1.1);
+  transition:filter .4s;
+}
+/* Beyaz nav'dan scrolled'a geçince logo rengini korur — PNG şeffaf arka planlıysa sorunsuz çalışır */
+.nav-logo-text{
+  font-family:Arial,sans-serif;
+  font-size:1.1rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:#fff;transition:color .4s;
+}
+#nav.scrolled .nav-logo-text{color:var(--ink)}
+.nav-links{display:flex;align-items:center;gap:36px;list-style:none}
+.nav-links a{
+  font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:rgba(255,255,255,.8);transition:color .3s;
+}
+#nav.scrolled .nav-links a{color:var(--mist)}
+.nav-links a:hover{color:var(--teal)}
+.nav-wa{
+  display:flex;align-items:center;gap:8px;
+  background:var(--green);color:#fff;
+  padding:9px 20px;border-radius:100px;
+  font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  transition:transform .2s,box-shadow .2s;
+}
+.nav-wa:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(37,211,102,.35)}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.nav-burger span{width:24px;height:2px;background:#fff;border-radius:2px;transition:background .4s}
+#nav.scrolled .nav-burger span{background:var(--ink)}
+
+/* ── MOBILE NAV ── */
+.mob-nav{
+  display:none;position:fixed;inset:0;z-index:999;
+  background:#fff;flex-direction:column;align-items:center;justify-content:center;gap:40px;
+}
+.mob-nav.open{display:flex}
+.mob-nav a{font-size:2rem;font-weight:700;color:var(--ink);letter-spacing:-.02em}
+.mob-close{position:absolute;top:24px;right:28px;font-size:2rem;cursor:pointer;color:var(--mist)}
+
+/* ── HERO ── */
+#hero{
+  position:relative;min-height:100svh;
+  display:flex;align-items:flex-end;
+  overflow:hidden;
+  background:var(--deep);
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:linear-gradient(160deg,#061E2F 0%,#0A3D5C 45%,#0E6080 70%,#1AA5BE 100%);
+}
+/* animated mesh */
+.hero-mesh{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 40%,rgba(43,181,200,.22) 0%,transparent 65%),
+    radial-gradient(ellipse 50% 40% at 20% 70%,rgba(10,61,92,.6) 0%,transparent 60%);
+  animation:meshPulse 8s ease-in-out infinite alternate;
+}
+@keyframes meshPulse{
+  0%{transform:scale(1) translateY(0)}
+  100%{transform:scale(1.04) translateY(-8px)}
+}
+/* wave bottom */
+.hero-wave{
+  position:absolute;bottom:0;left:0;right:0;z-index:2;line-height:0;
+}
+.hero-wave svg{width:100%;height:auto}
+
+.hero-content{
+  position:relative;z-index:3;
+  width:100%;padding:0 clamp(24px,6vw,96px) clamp(80px,10vh,130px);
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;
+}
+.hero-left{}
+.hero-eyebrow{
+  display:inline-block;
+  font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--teal);margin-bottom:20px;
+  background:rgba(43,181,200,.12);
+  border:1px solid rgba(43,181,200,.25);
+  padding:6px 16px;border-radius:100px;
+}
+.hero-h1{
+  font-family:Arial,sans-serif;font-weight:700;
+  font-size:clamp(3rem,6.5vw,6rem);
+  color:#fff;line-height:1.02;
+  margin-bottom:28px;
+  letter-spacing:-.02em;
+}
+.hero-h1 em{font-style:italic;color:var(--teal);font-weight:400}
+.hero-sub{
+  font-size:clamp(1rem,1.4vw,1.2rem);
+  color:rgba(255,255,255,.7);
+  line-height:1.7;max-width:480px;margin-bottom:44px;
+}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-solid{
+  background:var(--teal);color:#fff;
+  padding:15px 36px;border-radius:100px;
+  font-size:.88rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+  transition:background .3s,transform .2s,box-shadow .3s;
+  box-shadow:0 4px 24px rgba(43,181,200,.4);
+}
+.btn-solid:hover{background:var(--teal2);transform:translateY(-2px);box-shadow:0 8px 32px rgba(43,181,200,.5)}
+.btn-ghost{
+  border:1.5px solid rgba(255,255,255,.4);color:#fff;
+  padding:14px 34px;border-radius:100px;
+  font-size:.88rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  transition:border-color .3s,background .3s;
+}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.hero-right{
+  display:flex;flex-direction:column;gap:16px;align-items:flex-end;
+}
+.hero-stat{
+  background:rgba(255,255,255,.07);
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:16px;padding:20px 28px;
+  text-align:right;min-width:200px;
+  transition:transform .3s,background .3s;
+}
+.hero-stat:hover{transform:translateX(-4px);background:rgba(255,255,255,.12)}
+.hero-stat-num{
+  font-family:Arial,sans-serif;font-size:2.4rem;font-weight:700;
+  color:#fff;line-height:1;margin-bottom:4px;
+}
+.hero-stat-num span{color:var(--teal)}
+.hero-stat-label{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+
+/* ── SCROLL INDICATOR ── */
+.scroll-line{
+  position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
+  z-index:4;display:flex;flex-direction:column;align-items:center;gap:8px;
+}
+.scroll-line-bar{
+  width:1px;height:60px;
+  background:linear-gradient(to bottom,transparent,rgba(255,255,255,.5),transparent);
+  animation:scrollBar 2s ease-in-out infinite;
+}
+@keyframes scrollBar{
+  0%,100%{opacity:.3;transform:scaleY(.6)}
+  50%{opacity:1;transform:scaleY(1)}
+}
+
+/* ── STATS STRIP ── */
+#stats{
+  background:var(--ocean);
+  display:grid;grid-template-columns:repeat(5,1fr);
+}
+.stat-cell{
+  padding:36px 24px;text-align:center;
+  border-right:1px solid rgba(255,255,255,.08);
+  position:relative;overflow:hidden;
+}
+.stat-cell:last-child{border-right:none}
+.stat-cell::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(43,181,200,.06),transparent);
+  opacity:0;transition:opacity .4s;
+}
+.stat-cell:hover::before{opacity:1}
+.stat-n{
+  font-family:Arial,sans-serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:700;
+  color:#fff;line-height:1;margin-bottom:6px;
+}
+.stat-n em{color:var(--teal);font-style:normal}
+.stat-l{font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+
+/* ── SECTION HEADER ── */
+.s-tag{
+  display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--teal2);margin-bottom:16px;
+}
+.s-h2{
+  font-family:Arial,sans-serif;font-weight:700;
+  font-size:clamp(2.2rem,4.5vw,3.8rem);
+  color:var(--ink);line-height:1.05;letter-spacing:-.02em;margin-bottom:18px;
+}
+.s-h2 em{font-style:italic;color:var(--teal2);font-weight:400}
+.s-rule{width:48px;height:3px;background:var(--teal);border-radius:2px;margin:18px 0}
+.s-sub{font-size:1.05rem;color:var(--mist);line-height:1.75;max-width:540px}
+
+/* ══════════════════════════════════════════
+   SERENITY KALİTESİ — SCROLL-DRIVEN
+══════════════════════════════════════════ */
+#kalite{position:relative}
+
+/* Sticky container: holds the section */
+.kalite-sticky-wrapper{
+  position:relative;
+  /* height set by JS = n_features * 100vh + 100vh */
+}
+
+/* The sticky frame: full viewport, sticks while scrolling */
+.kalite-sticky{
+  position:sticky;
+  top:0;
+  height:100svh;
+  overflow:hidden;
+  display:flex;
+}
+
+/* LEFT PANEL — image fills entire left half */
+.kalite-left{
+  position:relative;
+  width:50%;
+  height:100%;
+  flex-shrink:0;
+  overflow:hidden;
+}
+
+.kalite-img-slot{
+  position:absolute;inset:0;
+  transition:opacity .7s cubic-bezier(.4,0,.2,1),transform .9s cubic-bezier(.4,0,.2,1);
+  opacity:0;transform:scale(1.04);
+}
+.kalite-img-slot.active{opacity:1;transform:scale(1)}
+
+/* Feature images — gradient fallback görseller yüklenene kadar görünür */
+.kimg-0{background:url('assets/images/kalite-xps-yalitim.jpg') center/cover no-repeat;background-color:#0a2a3e}
+.kimg-1{background:url('assets/images/kalite-marin-elektrik.jpg') center/cover no-repeat;background-color:#061825}
+.kimg-2{background:url('assets/images/kalite-gunes-sistemi.jpg') center/cover no-repeat;background-color:#082033}
+.kimg-3{background:url('assets/images/kalite-marin-kontra.jpg') center/cover no-repeat;background-color:#0D1F2D}
+.kimg-4{background:url('assets/images/kalite-ayous-govde.jpg') center/cover no-repeat;background-color:#061420}
+.kimg-5{background:url('assets/images/kalite-tasarim.jpg') center/cover no-repeat;background-color:#0A1E30}
+
+/* big emoji / icon centered */
+.kimg-icon{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-size:140px;opacity:.18;user-select:none;
+}
+/* text overlay on image */
+.kimg-overlay{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:48px;
+  background:linear-gradient(to top,rgba(6,18,31,.9) 0%,transparent 100%);
+  color:#fff;
+}
+.kimg-num{
+  font-family:Arial,sans-serif;font-size:6rem;font-weight:700;
+  opacity:.08;line-height:1;margin-bottom:-12px;
+  font-style:italic;color:#fff;
+}
+.kimg-title-sm{
+  font-family:Arial,sans-serif;font-size:1.1rem;font-weight:700;
+  letter-spacing:.04em;text-transform:uppercase;color:var(--teal);
+}
+
+/* RIGHT PANEL — text */
+.kalite-right{
+  width:50%;
+  height:100%;
+  overflow:hidden;
+  position:relative;
+}
+
+.kalite-text-slot{
+  position:absolute;inset:0;
+  padding:clamp(48px,7vh,96px) clamp(36px,4vw,72px);
+  display:flex;flex-direction:column;justify-content:center;
+  opacity:0;transform:translateY(32px);
+  transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1);
+  pointer-events:none;
+}
+.kalite-text-slot.active{
+  opacity:1;transform:translateY(0);pointer-events:auto;
+}
+
+.kt-eyebrow{
+  font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--teal2);margin-bottom:20px;
+}
+.kt-h3{
+  font-family:Arial,sans-serif;font-weight:700;
+  font-size:clamp(2rem,3.5vw,3rem);
+  color:var(--ink);line-height:1.05;letter-spacing:-.02em;
+  margin-bottom:20px;
+}
+.kt-h3 em{font-style:italic;color:var(--teal2);font-weight:400}
+.kt-rule{width:40px;height:3px;background:var(--teal);border-radius:2px;margin-bottom:24px}
+.kt-quote{
+  font-family:Arial,sans-serif;font-style:italic;
+  font-size:1.05rem;color:var(--ocean);
+  border-left:3px solid var(--teal);
+  padding:12px 20px;margin-bottom:28px;
+  background:rgba(43,181,200,.05);border-radius:0 8px 8px 0;
+  line-height:1.65;
+}
+.kt-p{font-size:.97rem;color:#4A6A7E;line-height:1.85;margin-bottom:14px}
+.kt-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.kt-pill{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--sky);border:1px solid rgba(43,181,200,.25);
+  padding:7px 16px;border-radius:100px;
+  font-size:.78rem;font-weight:700;color:var(--teal2);letter-spacing:.03em;
+}
+
+/* progress dots */
+.kalite-dots{
+  position:absolute;right:24px;top:50%;transform:translateY(-50%);
+  display:flex;flex-direction:column;gap:8px;z-index:10;
+}
+.kalite-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:rgba(43,181,200,.3);
+  transition:background .3s,transform .3s;
+  cursor:pointer;
+}
+.kalite-dot.active{background:var(--teal);transform:scale(1.5)}
+
+/* ── PARALLAX QUOTE ── */
+.pq-band{
+  position:relative;min-height:80vh;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.pq-bg{
+  position:absolute;left:0;right:0;top:-40%;width:100%;height:180%;
+  will-change:transform;
+}
+.pq-bg-inner{
+  width:100%;height:100%;
+}
+.pq-bg-0{background:url('assets/images/parallax-1.jpg') center/cover no-repeat;background-color:#061E2F}
+.pq-bg-1{background:url('assets/images/parallax-2.jpg') center/cover no-repeat;background-color:#061420}
+.pq-bg-2{background:url('assets/images/parallax-3.jpg') center/cover no-repeat;background-color:#040F1A}
+
+.pq-overlay{position:absolute;inset:0;background:rgba(6,18,31,.65)}
+.pq-content{
+  position:relative;z-index:2;
+  text-align:center;max-width:860px;
+  padding:0 clamp(24px,6vw,80px);
+}
+.pq-mark{
+  font-family:Arial,sans-serif;font-size:8rem;font-weight:700;
+  color:var(--teal);opacity:.15;line-height:.7;display:block;margin-bottom:-24px;
+}
+.pq-text{
+  font-family:Arial,sans-serif;font-style:italic;font-weight:400;
+  font-size:clamp(1.6rem,3.5vw,2.8rem);
+  color:#fff;line-height:1.3;margin-bottom:20px;
+}
+.pq-attr{
+  font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--teal);
+}
+
+/* ══════════════════════════════════════════
+   MODELLER — SCROLL-DRIVEN VERTICAL
+══════════════════════════════════════════ */
+#modeller{position:relative;background:var(--deep)}
+
+.modeller-header{
+  padding:clamp(60px,10vh,120px) clamp(24px,6vw,96px) 0;
+  position:relative;z-index:2;
+}
+.modeller-header .s-h2{color:#fff}
+.modeller-header .s-rule{background:var(--teal)}
+.modeller-header .s-sub{color:rgba(255,255,255,.5)}
+
+/* Sticky container */
+.models-sticky-wrap{position:relative}
+/* height set by JS */
+
+.models-sticky{
+  position:sticky;top:0;height:100svh;
+  display:flex;overflow:hidden;
+}
+
+/* LEFT — full-bleed model visual */
+.model-visual-pane{
+  position:relative;
+  width:55%;height:100%;
+  flex-shrink:0;overflow:hidden;
+}
+.model-vis{
+  position:absolute;inset:0;
+  opacity:0;transition:opacity .8s cubic-bezier(.4,0,.2,1);
+  display:flex;align-items:center;justify-content:center;
+}
+.model-vis.active{opacity:1}
+
+.mv-bg-smile {background:url('assets/images/model-333-smile.jpg') center/cover no-repeat;background-color:#061E2F}
+.mv-bg-moodz {background:url('assets/images/model-360-moodz.jpg') center/cover no-repeat;background-color:#06201A}
+.mv-bg-unique{background:url('assets/images/model-380-unique.jpg') center/cover no-repeat;background-color:#0D1F2D}
+.mv-bg-utopia{background:url('assets/images/model-423-utopia.jpg') center/cover no-repeat;background-color:#1A0D0D}
+.mv-bg-luxury{background:linear-gradient(140deg,#0D0D0D 0%,#1A1A1A 50%,#333 100%)}
+
+.mv-emoji{font-size:200px;opacity:.09;user-select:none;filter:blur(1px)}
+
+.model-id-display{
+  position:absolute;
+  top:50%;left:50%;transform:translate(-50%,-50%);
+  text-align:center;z-index:2;
+  pointer-events:none;
+}
+.model-num-big{
+  font-family:Arial,sans-serif;font-size:clamp(5rem,13vw,11rem);font-weight:700;
+  color:rgba(255,255,255,.06);line-height:1;letter-spacing:-.04em;
+  white-space:nowrap;
+}
+.model-name-big{
+  font-family:Arial,sans-serif;font-size:clamp(1.8rem,4vw,3.2rem);font-weight:700;
+  color:#fff;letter-spacing:.05em;text-transform:uppercase;
+  margin-top:-16px;
+}
+.model-tagline-big{
+  font-size:.8rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--teal);margin-top:12px;
+}
+
+/* bottom label strip on image */
+.model-size-strip{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:28px 36px;
+  background:linear-gradient(to top,rgba(6,18,31,.9),transparent);
+  display:flex;align-items:flex-end;justify-content:space-between;
+}
+.mss-length{
+  font-family:Arial,sans-serif;font-size:3.5rem;font-weight:700;
+  color:rgba(255,255,255,.12);line-height:1;
+}
+.mss-label{
+  font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);
+}
+
+/* RIGHT — config text */
+.model-config-pane{
+  width:45%;height:100%;
+  overflow:hidden;position:relative;
+  background:var(--deep);
+}
+.model-config-slot{
+  position:absolute;inset:0;
+  padding:clamp(40px,7vh,80px) clamp(28px,3vw,56px);
+  overflow-y:auto;
+  opacity:0;transform:translateY(24px);
+  transition:opacity .6s,transform .6s;
+  pointer-events:none;
+  /* hide scrollbar */
+  scrollbar-width:none;
+}
+.model-config-slot::-webkit-scrollbar{display:none}
+.model-config-slot.active{opacity:1;transform:none;pointer-events:auto}
+
+.mc-index{
+  font-family:Arial,sans-serif;font-size:.68rem;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--teal);
+  margin-bottom:24px;opacity:.7;
+}
+.mc-h2{
+  font-family:Arial,sans-serif;font-weight:700;
+  font-size:clamp(1.6rem,3vw,2.4rem);color:#fff;
+  line-height:1.05;letter-spacing:-.01em;margin-bottom:8px;
+}
+.mc-sub{
+  font-size:.88rem;color:rgba(255,255,255,.4);
+  margin-bottom:28px;line-height:1.6;
+}
+.mc-section{
+  margin-bottom:24px;
+}
+.mc-section-title{
+  font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--teal);margin-bottom:10px;padding-bottom:8px;
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+.mc-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+.mc-list li{
+  font-size:.88rem;color:rgba(255,255,255,.65);
+  display:flex;align-items:flex-start;gap:10px;line-height:1.5;
+}
+.mc-list li::before{content:'→';color:var(--teal);flex-shrink:0;font-weight:700}
+.mc-highlight{
+  background:rgba(43,181,200,.08);
+  border:1px solid rgba(43,181,200,.2);
+  border-radius:10px;padding:16px 20px;
+  font-size:.88rem;color:rgba(255,255,255,.7);
+  line-height:1.6;margin-top:16px;
+  font-style:italic;
+}
+
+/* progress indicators for models */
+.models-progress{
+  position:absolute;right:0;top:0;bottom:0;width:3px;
+  background:rgba(255,255,255,.04);z-index:10;
+}
+.models-progress-fill{
+  width:100%;background:var(--teal);
+  transition:height .1s;border-radius:2px;
+}
+
+/* model nav dots on left */
+.model-dots{
+  position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
+  display:flex;gap:8px;z-index:10;
+}
+.model-dot{
+  width:28px;height:3px;border-radius:2px;
+  background:rgba(255,255,255,.15);
+  transition:background .3s,width .3s;
+  cursor:pointer;
+}
+.model-dot.active{background:var(--teal);width:48px}
+
+/* LUXURY EASTER EGG */
+.luxury-egg{
+  background:rgba(0,0,0,.7);
+  backdrop-filter:blur(4px);
+}
+.luxury-lock{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  text-align:center;z-index:3;
+}
+.luxury-lock-icon{font-size:4rem;margin-bottom:16px;opacity:.4}
+.luxury-lock-title{
+  font-family:Arial,sans-serif;font-size:1.4rem;font-weight:700;
+  color:rgba(255,255,255,.3);letter-spacing:.08em;text-transform:uppercase;
+}
+
+/* ── HIKAYE ── */
+#hikaye{padding:clamp(80px,12vh,160px) 0;background:#fff}
+.hikaye-wrap{
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;
+  align-items:center;max-width:1240px;margin:0 auto;
+  padding:0 clamp(24px,5vw,80px);
+}
+.hikaye-photo-wrap{position:relative}
+.hikaye-photo-box{
+  aspect-ratio:4/5;border-radius:4px;overflow:hidden;position:relative;
+  background:linear-gradient(160deg,var(--sky) 0%,#bfe4ed 100%);
+  box-shadow:0 32px 80px rgba(13,43,62,.15);
+}
+.hikaye-photo-inner{
+  width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;font-size:100px;
+}
+.hikaye-float{
+  position:absolute;bottom:-24px;right:-24px;
+  background:#fff;border-radius:16px;padding:20px 24px;
+  box-shadow:0 12px 40px rgba(13,43,62,.12);
+}
+.hikaye-float-n{
+  font-family:Arial,sans-serif;font-size:2.4rem;font-weight:700;
+  color:var(--teal2);line-height:1;
+}
+.hikaye-float-l{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--mist)}
+.hikaye-text .s-rule{margin:18px 0}
+.hikaye-text p{font-size:1rem;color:#4A6A7E;line-height:1.85;margin-bottom:16px}
+.hikaye-pull{
+  font-family:Arial,sans-serif;font-style:italic;font-size:1.1rem;
+  color:var(--ocean);border-left:3px solid var(--teal);
+  padding:16px 22px;background:var(--sky);border-radius:0 10px 10px 0;
+  line-height:1.65;margin:24px 0;
+}
+
+/* ── TESTIMONIALS ── */
+#testimonials{
+  padding:clamp(80px,12vh,160px) 0;
+  background:var(--deep);
+}
+.test-header{
+  text-align:center;max-width:600px;margin:0 auto;
+  padding:0 24px clamp(48px,8vh,80px);
+}
+.test-header .s-h2{color:#fff}
+.test-track{
+  display:flex;gap:24px;
+  padding:8px clamp(24px,5vw,80px) 40px;
+  overflow-x:auto;scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none;
+}
+.test-track::-webkit-scrollbar{display:none}
+.t-card{
+  flex-shrink:0;width:360px;scroll-snap-align:start;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:16px;padding:36px 32px;
+  transition:transform .3s,background .3s;
+}
+.t-card:hover{transform:translateY(-6px);background:rgba(255,255,255,.09)}
+.t-stars{color:#FFD700;font-size:1rem;margin-bottom:20px;letter-spacing:2px}
+.t-body{
+  font-family:Arial,sans-serif;font-style:italic;
+  font-size:.97rem;color:rgba(255,255,255,.82);
+  line-height:1.75;margin-bottom:28px;
+}
+.t-footer{display:flex;align-items:center;gap:14px}
+.t-av{
+  width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--teal),var(--ocean));
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;font-weight:700;color:#fff;flex-shrink:0;
+}
+.t-name{font-size:.9rem;font-weight:700;color:#fff}
+.t-model-tag{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
+
+/* ── INSTAGRAM ── */
+#instagram{padding:clamp(80px,12vh,160px) 0;background:var(--sand)}
+.ig-inner{max-width:1240px;margin:0 auto;padding:0 clamp(24px,5vw,80px)}
+.ig-header{margin-bottom:52px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px}
+.ig-handle{
+  display:flex;align-items:center;gap:10px;
+  font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mist);
+  margin-bottom:12px;
+}
+.ig-handle span{
+  background:linear-gradient(135deg,#E1306C,#833AB4);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+
+/* Masonry-style grid */
+.ig-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:repeat(2,220px);
+  gap:12px;
+  margin-bottom:36px;
+}
+.ig-cell{
+  border-radius:10px;overflow:hidden;
+  cursor:pointer;position:relative;
+  transition:transform .4s cubic-bezier(.4,0,.2,1);
+}
+.ig-cell:hover{transform:scale(.98)}
+.ig-cell:first-child{grid-row:span 2;grid-column:span 1}
+.ig-cell:nth-child(3){grid-row:span 2}
+.ig-cell-bg{
+  width:100%;height:100%;
+  transition:transform .6s cubic-bezier(.4,0,.2,1);
+}
+.ig-cell:hover .ig-cell-bg{transform:scale(1.06)}
+.ig-hover{
+  position:absolute;inset:0;
+  background:rgba(13,43,62,0);
+  transition:background .3s;
+  display:flex;align-items:center;justify-content:center;
+}
+.ig-cell:hover .ig-hover{background:rgba(13,43,62,.35)}
+.ig-hover-icon{
+  font-size:2rem;opacity:0;transform:scale(.5);
+  transition:opacity .3s,transform .3s;color:#fff;
+}
+.ig-cell:hover .ig-hover-icon{opacity:1;transform:scale(1)}
+
+/* Gradient backgrounds for ig cells */
+.igb-0{background:linear-gradient(135deg,#1AA5BE 0%,#0A3D5C 100%)}
+.igb-1{background:linear-gradient(135deg,#2BB5C8 0%,#1A3A5C 100%)}
+.igb-2{background:linear-gradient(135deg,#0D3D5C 0%,#1A7AAA 100%)}
+.igb-3{background:linear-gradient(135deg,#0D4A6A 0%,#28C49A 100%)}
+.igb-4{background:linear-gradient(135deg,#1A5C8A 0%,#2BB5C8 100%)}
+.igb-5{background:linear-gradient(135deg,#0A2A3E 0%,#1A6A9A 100%)}
+.igb-6{background:linear-gradient(135deg,#1AA5BE 0%,#0A1E30 100%)}
+
+.ig-cta{text-align:center}
+.ig-feed-wrap{min-height:400px;position:relative}
+.ig-fallback{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  min-height:300px;color:var(--mist);font-size:.95rem;
+}
+/* Elfsight yüklenince fallback'i gizle */
+.elfsight-app-loaded + .ig-fallback,
+.ig-feed-wrap:has(iframe) .ig-fallback{display:none}
+.btn-ig{
+  display:inline-flex;align-items:center;gap:10px;
+  background:linear-gradient(135deg,#E1306C 0%,#833AB4 50%,#405DE6 100%);
+  color:#fff;padding:16px 36px;border-radius:100px;
+  font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  transition:transform .2s,box-shadow .3s;
+  box-shadow:0 8px 28px rgba(130,58,180,.3);
+}
+.btn-ig:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(130,58,180,.45)}
+
+/* ── SSS ── */
+#sss{padding:clamp(80px,12vh,160px) 0;background:#fff}
+.sss-inner{
+  max-width:1240px;margin:0 auto;
+  padding:0 clamp(24px,5vw,80px);
+  display:grid;grid-template-columns:380px 1fr;gap:80px;align-items:start;
+}
+.sss-left{position:sticky;top:100px}
+.sss-right{}
+.acc-item{border-bottom:1px solid rgba(43,181,200,.2)}
+.acc-q{
+  width:100%;background:none;border:none;text-align:left;
+  padding:22px 0;cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+  font-family:Arial,sans-serif;font-size:1rem;font-weight:700;color:var(--ink);
+  transition:color .3s;
+}
+.acc-q:hover{color:var(--teal2)}
+.acc-icon{
+  width:30px;height:30px;border-radius:50%;
+  background:var(--sky);display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;font-size:1.2rem;color:var(--teal2);
+  transition:transform .4s,background .3s;
+}
+.acc-item.open .acc-icon{transform:rotate(45deg);background:var(--teal);color:#fff}
+.acc-a{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.4,0,.2,1)}
+.acc-a-inner{padding:0 0 22px;font-size:.95rem;color:#4A6A7E;line-height:1.85}
+.acc-item.open .acc-a{max-height:500px}
+
+/* ── TEKLIF ── */
+#teklif{
+  padding:clamp(80px,12vh,160px) 0;
+  background:linear-gradient(160deg,var(--sky) 0%,#d4eef5 100%);
+}
+.teklif-inner{
+  max-width:1240px;margin:0 auto;
+  padding:0 clamp(24px,5vw,80px);
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
+}
+.teklif-pitch .s-rule{margin:18px 0}
+.teklif-pitch p{font-size:1rem;color:#4A6A7E;line-height:1.85;margin-bottom:16px}
+.teklif-promise{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:16px 20px;
+  background:rgba(43,181,200,.1);
+  border:1px solid rgba(43,181,200,.25);
+  border-radius:10px;margin-top:20px;
+}
+.teklif-promise-icon{font-size:1.4rem;flex-shrink:0}
+.teklif-promise p{margin:0;font-size:.9rem;font-weight:600;color:var(--ocean);line-height:1.5}
+
+.form-box{
+  background:#fff;border-radius:20px;padding:44px 40px;
+  box-shadow:0 24px 70px rgba(13,43,62,.1);
+}
+.form-box h3{
+  font-family:Arial,sans-serif;font-weight:700;font-size:1.5rem;
+  color:var(--ink);margin-bottom:28px;
+}
+.fg{margin-bottom:16px}
+.fg label{display:block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal2);margin-bottom:6px}
+.fg input,.fg select,.fg textarea{
+  width:100%;padding:13px 16px;
+  border:1.5px solid rgba(43,181,200,.25);border-radius:10px;
+  font-family:Arial,sans-serif;font-size:.95rem;color:var(--ink);
+  background:var(--sky);outline:none;
+  transition:border-color .3s,box-shadow .3s,background .3s;
+  appearance:none;
+}
+.fg input:focus,.fg select:focus,.fg textarea:focus{
+  border-color:var(--teal);
+  box-shadow:0 0 0 4px rgba(43,181,200,.12);
+  background:#fff;
+}
+.fg textarea{resize:vertical;min-height:90px}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.btn-wa-submit{
+  width:100%;border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--green);color:#fff;padding:16px;border-radius:12px;
+  font-family:Arial,sans-serif;font-size:.95rem;font-weight:700;
+  letter-spacing:.04em;text-transform:uppercase;
+  transition:background .3s,transform .2s;margin-top:4px;
+}
+.btn-wa-submit:hover{background:#1ebe5d;transform:translateY(-1px)}
+.form-note{text-align:center;font-size:.72rem;color:var(--mist);margin-top:10px}
+
+/* ── FOOTER ── */
+#footer{background:var(--deep);padding:80px 0 0;color:rgba(255,255,255,.55)}
+.footer-inner{
+  max-width:1240px;margin:0 auto;
+  padding:0 clamp(24px,5vw,80px);
+  display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;
+  margin-bottom:60px;
+}
+.f-brand .f-logo-text{
+  font-family:Arial,sans-serif;font-size:1.3rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;color:#fff;
+  margin:16px 0 12px;
+}
+.footer-logo-img{
+  width:52px;height:52px;object-fit:contain;
+  opacity:.9;
+}
+.f-brand p{font-size:.85rem;line-height:1.7}
+.f-social{display:flex;gap:10px;margin-top:20px}
+.f-soc{
+  width:38px;height:38px;border-radius:50%;
+  background:rgba(255,255,255,.06);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;transition:background .3s,transform .2s;
+}
+.f-soc:hover{background:var(--teal);transform:translateY(-2px)}
+.f-col h5{
+  font-size:.65rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--teal);margin-bottom:18px;
+}
+.f-links{list-style:none;display:flex;flex-direction:column;gap:9px}
+.f-links a{font-size:.85rem;color:rgba(255,255,255,.45);transition:color .3s}
+.f-links a:hover{color:var(--teal)}
+.f-contact-row{display:flex;align-items:center;gap:10px;font-size:.85rem;margin-bottom:10px}
+.f-bottom{
+  border-top:1px solid rgba(255,255,255,.06);
+  padding:24px clamp(24px,5vw,80px);
+  max-width:none;
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:.75rem;
+}
+
+/* WA FLOAT */
+.wa-btn{
+  position:fixed;bottom:28px;right:28px;z-index:900;
+  width:58px;height:58px;border-radius:50%;
+  background:var(--green);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px rgba(37,211,102,.4);
+  transition:transform .3s,box-shadow .3s;
+}
+.wa-btn:hover{transform:scale(1.12);box-shadow:0 12px 32px rgba(37,211,102,.5)}
+.wa-btn svg{width:28px;height:28px;fill:#fff}
+
+/* ── REVEAL UTILITY ── */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.22,.68,0,1.2),transform .7s cubic-bezier(.22,.68,0,1.2)}
+.rv.in{opacity:1;transform:none}
+.rv-l{transform:translateX(-32px)}
+.rv-r{transform:translateX(32px)}
+.rv-l.in,.rv-r.in{transform:none;opacity:1}
+.d1{transition-delay:.08s}
+.d2{transition-delay:.16s}
+.d3{transition-delay:.24s}
+.d4{transition-delay:.32s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  #nav{padding:0 28px}
+  .nav-links{display:none}
+  .nav-burger{display:flex}
+  .hero-content{grid-template-columns:1fr;gap:40px}
+  .hero-right{align-items:flex-start;flex-direction:row;flex-wrap:wrap}
+  .hero-stat{min-width:160px;text-align:left}
+  #stats{grid-template-columns:repeat(3,1fr)}
+  .kalite-sticky,.models-sticky{flex-direction:column}
+  .kalite-left,.kalite-right,.model-visual-pane,.model-config-pane{width:100%;height:50%}
+  .hikaye-wrap,.teklif-inner,.sss-inner{grid-template-columns:1fr}
+  .sss-left{position:relative;top:0}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .ig-grid{grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,160px)}
+  .ig-cell:first-child{grid-row:span 2}
+  .ig-cell:nth-child(3){grid-row:span 1}
+}
+@media(max-width:640px){
+  #stats{grid-template-columns:repeat(2,1fr)}
+  .ig-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:auto}
+  .ig-cell:first-child,.ig-cell:nth-child(3){grid-row:span 1}
+  .footer-inner{grid-template-columns:1fr}
+  .fg-row{grid-template-columns:1fr}
+  .model-num-big{font-size:4rem}
+}
+</style>
+</head>
+<body>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobNav">
+  <span class="mob-close" onclick="closeMob()">✕</span>
+  <a href="#kalite" onclick="closeMob()">Serenity Kalitesi</a>
+  <a href="#modeller" onclick="closeMob()">Modeller</a>
+  <a href="#hikaye" onclick="closeMob()">Hikayemiz</a>
+  <a href="#testimonials" onclick="closeMob()">Topluluk</a>
+  <a href="#sss" onclick="closeMob()">SSS</a>
+  <a href="#teklif" onclick="closeMob()">Teklif Al</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <img src="assets/images/logo.png" alt="Serenity Karavan" class="nav-logo-img" width="44" height="44"/>
+    <span class="nav-logo-text">Serenity</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#kalite">Kalite</a></li>
+    <li><a href="#modeller">Modeller</a></li>
+    <li><a href="#hikaye">Hikaye</a></li>
+    <li><a href="#testimonials">Topluluk</a></li>
+    <li><a href="#sss">SSS</a></li>
+    <li><a href="https://wa.me/905322129316" target="_blank" class="nav-wa">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.105 1.523 5.83L.057 23.428a.5.5 0 0 0 .612.612l5.598-1.466A11.952 11.952 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.52-5.16-1.424l-.37-.22-3.827 1.003 1.022-3.724-.242-.384A9.957 9.957 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      WhatsApp
+    </a></li>
+  </ul>
+  <div class="nav-burger" onclick="openMob()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-bg">
+    <video autoplay muted loop playsinline
+           style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-mesh"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-eyebrow rv">✦ Türkiye'nin En Kaliteli Yerli Karavanı</div>
+      <h1 class="hero-h1 rv d1">
+        Huzur<br/>bir his değil,<br/><em>bir seçimdir.</em>
+      </h1>
+      <p class="hero-sub rv d2">Herkes karavan alabilir. Ama herkes Serenity hissini yaşayamaz. İthal kalitesinde malzeme, özgün tasarım ve ömür boyu süren bir topluluk.</p>
+      <div class="hero-btns rv d3">
+        <a href="#modeller" class="btn-solid">Modelleri Keşfet</a>
+        <a href="#teklif" class="btn-ghost">Teklif Al</a>
+      </div>
+    </div>
+    <div class="hero-right rv d2">
+      <div class="hero-stat"><div class="hero-stat-num"><span id="c1">0</span><em>+</em></div><div class="hero-stat-label">Teslim Edilen Karavan</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">−20<em>/</em>+50°C</div><div class="hero-stat-label">Yalıtım Aralığı</div></div>
+      <div class="hero-stat"><div class="hero-stat-num"><span id="c2">0</span><em> Gün</em></div><div class="hero-stat-label">Off-Grid Ömür</div></div>
+      <div class="hero-stat"><div class="hero-stat-num"><span id="c3">0</span><em>%</em></div><div class="hero-stat-label">Marin Standart Donanım</div></div>
+    </div>
+  </div>
+  <div class="scroll-line"><div class="scroll-line-bar"></div></div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F8FAFC"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ═══ STATS ═══ -->
+<section id="stats">
+  <div class="stat-cell rv"><div class="stat-n"><span id="s1">0</span><em>+</em></div><div class="stat-l">Teslim Edilen</div></div>
+  <div class="stat-cell rv d1"><div class="stat-n">4</div><div class="stat-l">Aktif Model</div></div>
+  <div class="stat-cell rv d2"><div class="stat-n">−20<em>/+50°C</em></div><div class="stat-l">Yalıtım Aralığı</div></div>
+  <div class="stat-cell rv d3"><div class="stat-n"><span id="s2">0</span><em> Gün</em></div><div class="stat-l">Off-Grid Ömür</div></div>
+  <div class="stat-cell rv d4"><div class="stat-n">100<em>%</em></div><div class="stat-l">Marin Standart</div></div>
+</section>
+
+<!-- ═══ PARALLAX QUOTE 1 ═══ -->
+<div class="pq-band" data-pq="0">
+  <div class="pq-bg"><div class="pq-bg-inner pq-bg-0"></div></div>
+  <div class="pq-overlay"></div>
+  <div class="pq-content">
+    <span class="pq-mark">"</span>
+    <p class="pq-text">Ucuz malzeme almak parayı israf etmektir.<br/>Kaliteli malzeme almak ise parayı yatırıma dönüştürmektir.</p>
+    <p class="pq-attr">— Akın Çam, Serenity Karavan Kurucusu</p>
+  </div>
+</div>
+
+<!-- ═══ SEBENİTY KALİTESİ — SCROLL DRIVEN ═══ -->
+<section id="kalite">
+  <div class="kalite-sticky-wrapper" id="kaliteWrapper">
+    <div class="kalite-sticky" id="kaliteSticky">
+
+      <!-- LEFT IMAGE PANEL -->
+      <div class="kalite-left">
+        <div class="kalite-img-slot kimg-0 active" id="ki0">
+          <div class="kimg-icon">🧊</div>
+          <div class="kimg-overlay">
+            <div class="kimg-num">01</div>
+            <div class="kimg-title-sm">XPS-CTP Yalıtım</div>
+          </div>
+        </div>
+        <div class="kalite-img-slot kimg-1" id="ki1">
+          <div class="kimg-icon">⚡</div>
+          <div class="kimg-overlay">
+            <div class="kimg-num">02</div>
+            <div class="kimg-title-sm">Marin Elektrik</div>
+          </div>
+        </div>
+        <div class="kalite-img-slot kimg-2" id="ki2">
+          <div class="kimg-icon">☀️</div>
+          <div class="kimg-overlay">
+            <div class="kimg-num">03</div>
+            <div class="kimg-title-sm">12V Off-Grid</div>
+          </div>
+        </div>
+        <div class="kalite-img-slot kimg-3" id="ki3">
+          <div class="kimg-icon">🪵</div>
+          <div class="kimg-overlay">
+            <div class="kimg-num">04</div>
+            <div class="kimg-title-sm">Marin Kontra</div>
+          </div>
+        </div>
+        <div class="kalite-img-slot kimg-4" id="ki4">
+          <div class="kimg-icon">🏗️</div>
+          <div class="kimg-overlay">
+            <div class="kimg-num">05</div>
+            <div class="kimg-title-sm">Ayous Gövde</div>
+          </div>
+        </div>
+        <div class="kalite-img-slot kimg-5" id="ki5">
+          <div class="kimg-icon">✦</div>
+          <div class="kimg-overlay">
+            <div class="kimg-num">06</div>
+            <div class="kimg-title-sm">Özgün Tasarım</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT TEXT PANEL -->
+      <div class="kalite-right">
+        <!-- SLOT 0 -->
+        <div class="kalite-text-slot active" id="kt0">
+          <div class="kt-eyebrow">01 — Serenity Kalitesi</div>
+          <h3 class="kt-h3">−20 ile +50°C<br/><em>Her mevsim, her yerde.</em></h3>
+          <div class="kt-rule"></div>
+          <blockquote class="kt-quote">
+            "Pek çok karavan 'yalıtımlı' iddiasındadır. Serenity'nin farkı şu: kendi üretimimiz."
+          </blockquote>
+          <p class="kt-p">Tüm Serenity karavanlarda XPS-CTP kompozit paneller kullanılır. Bu paneller kendi üretimimizdir — piyasadan alınan ucuz sünger değil, nem ve mekanik yüklere karşı test edilmiş özel kaplama.</p>
+          <p class="kt-p">Dağda karlı bir sabah da, ege sahilinde 40 derecelik bir öğle de konforludur.</p>
+          <div class="kt-pills">
+            <span class="kt-pill">✓ −20°C kış kampı</span>
+            <span class="kt-pill">✓ +50°C yaz konforu</span>
+            <span class="kt-pill">✓ Kendi üretimi panel</span>
+            <span class="kt-pill">✓ 4 mevsim performans</span>
+          </div>
+        </div>
+        <!-- SLOT 1 -->
+        <div class="kalite-text-slot" id="kt1">
+          <div class="kt-eyebrow">02 — Serenity Kalitesi</div>
+          <h3 class="kt-h3">Elektrik ve su<br/><em>tekne kalitesinde.</em></h3>
+          <div class="kt-rule"></div>
+          <blockquote class="kt-quote">
+            "Tekneler denizde yaşar. Bizim karavanlar, aynı malzemeyle yapılmıştır."
+          </blockquote>
+          <p class="kt-p">Tüm elektrik kablo, konnektör ve ekipmanları marin (deniz) standardındadır. Su tesisat hattının her parçası yüksek nem ve su temasına dayanıklı.</p>
+          <p class="kt-p">Standart bir karavan 3 yılda paslanmaya başlarken, Serenity onlarca yıl sorunsuz çalışır.</p>
+          <div class="kt-pills">
+            <span class="kt-pill">✓ Marin kablo</span>
+            <span class="kt-pill">✓ Yanmaz tesisat</span>
+            <span class="kt-pill">✓ Paslanmaz bağlantı</span>
+          </div>
+        </div>
+        <!-- SLOT 2 -->
+        <div class="kalite-text-slot" id="kt2">
+          <div class="kt-eyebrow">03 — Serenity Kalitesi</div>
+          <h3 class="kt-h3">Günlerce şebeke yok.<br/><em>Sorun da yok.</em></h3>
+          <div class="kt-rule"></div>
+          <blockquote class="kt-quote">
+            "Elektrik direği görmeden geçirilen tatil, gerçek tattır."
+          </blockquote>
+          <p class="kt-p">Tüm elektrikli sistemler 12 volt DC ile çalışır. Güneş panellerinden gelen enerji doğrudan kullanılır, inverter kaybı yoktur. 205W+ güneş paneli ve 100–200 amper jel akü ile günlerce bağımsız yaşanabilir.</p>
+          <div class="kt-pills">
+            <span class="kt-pill">✓ 205W mono kristal</span>
+            <span class="kt-pill">✓ 100–200A jel akü</span>
+            <span class="kt-pill">✓ MPPT şarj kontrol</span>
+            <span class="kt-pill">✓ Transfer switch</span>
+          </div>
+        </div>
+        <!-- SLOT 3 -->
+        <div class="kalite-text-slot" id="kt3">
+          <div class="kt-eyebrow">04 — Serenity Kalitesi</div>
+          <h3 class="kt-h3">Mobilyalar asla<br/><em>kabarmaz, çürümez.</em></h3>
+          <div class="kt-rule"></div>
+          <blockquote class="kt-quote">
+            "5 yıl sonra mobilyan şişiyorsa, karavan değil malzeme hatası satın almışsın."
+          </blockquote>
+          <p class="kt-p">Marin kontra, nem ve suya karşı kimyasal olarak dirençli özel bir kontra türüdür. Teknelerde ve yatlarda kullanılır. Serenity'de tüm mobilya ve dolap gövdeleri bu malzemeden üretilir.</p>
+          <div class="kt-pills">
+            <span class="kt-pill">✓ Marin kontra gövde</span>
+            <span class="kt-pill">✓ Soft close menteşe</span>
+            <span class="kt-pill">✓ Yat tipi donanım</span>
+          </div>
+        </div>
+        <!-- SLOT 4 -->
+        <div class="kalite-text-slot" id="kt4">
+          <div class="kt-eyebrow">05 — Serenity Kalitesi</div>
+          <h3 class="kt-h3">Büyük boyut,<br/><em>şaşırtıcı hafiflik.</em></h3>
+          <div class="kt-rule"></div>
+          <blockquote class="kt-quote">
+            "Ağırlık hem yakıt hem de güvenlik meselesidir. Biz bu detayı da ciddiye aldık."
+          </blockquote>
+          <p class="kt-p">Serenity karavanların ana gövdesi Ayous tropikal ağacından yapılmıştır. Hem hafif hem son derece dayanıklı, neme dirençli. Boyutlarına rağmen piyasadaki birçok küçük rakibinden daha az ağırlık taşır.</p>
+          <div class="kt-pills">
+            <span class="kt-pill">✓ Tropikal ayous gövde</span>
+            <span class="kt-pill">✓ Galvaniz çelik şasi</span>
+            <span class="kt-pill">✓ Alko & Knott tertibat</span>
+          </div>
+        </div>
+        <!-- SLOT 5 -->
+        <div class="kalite-text-slot" id="kt5">
+          <div class="kt-eyebrow">06 — Serenity Kalitesi</div>
+          <h3 class="kt-h3">Karavan değil,<br/><em>yaşam tarzı.</em></h3>
+          <div class="kt-rule"></div>
+          <blockquote class="kt-quote">
+            "Biz hiçbir zaman başka bir markayı kopyalamadık. Çünkü Serenity, bir kopya değil."
+          </blockquote>
+          <p class="kt-p">Piyasadaki birçok üretici aynı şablonu kullanır. Serenity her modelde özgün bir iç ve dış tasarım anlayışı sunar. Yüksek tavan, çift yönlü fan hekleri, kasetli tuvalet, geniş mutfak.</p>
+          <div class="kt-pills">
+            <span class="kt-pill">✓ Yüksek tavan</span>
+            <span class="kt-pill">✓ Çift yönlü fan heki</span>
+            <span class="kt-pill">✓ Kasetli tuvalet</span>
+            <span class="kt-pill">✓ Özgün tasarım</span>
+          </div>
+        </div>
+
+        <!-- progress dots -->
+        <div class="kalite-dots" id="kaliteDots">
+          <div class="kalite-dot active" onclick="jumpKalite(0)"></div>
+          <div class="kalite-dot" onclick="jumpKalite(1)"></div>
+          <div class="kalite-dot" onclick="jumpKalite(2)"></div>
+          <div class="kalite-dot" onclick="jumpKalite(3)"></div>
+          <div class="kalite-dot" onclick="jumpKalite(4)"></div>
+          <div class="kalite-dot" onclick="jumpKalite(5)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PARALLAX QUOTE 2 ═══ -->
+<div class="pq-band" data-pq="1">
+  <div class="pq-bg"><div class="pq-bg-inner pq-bg-1"></div></div>
+  <div class="pq-overlay"></div>
+  <div class="pq-content">
+    <span class="pq-mark">"</span>
+    <p class="pq-text">Piyasada ucuz karavan çok. Ama 5 yıl sonra hâlâ<br/>"keşke Serenity alsaydım" demek istemiyorsanız,<br/>doğru yerdesiniz.</p>
+    <p class="pq-attr">— Serenity Topluluğu</p>
+  </div>
+</div>
+
+<!-- ═══ MODELLER — SCROLL DRIVEN ═══ -->
+<section id="modeller">
+  <div class="modeller-header rv">
+    <div class="s-tag">Serenity Ailesi</div>
+    <h2 class="s-h2">Hangisi <em>senin</em> Serenity'n?</h2>
+    <div class="s-rule" style="background:var(--teal)"></div>
+    <p class="s-sub">Her model, aynı premium baz donanımla gelir. Fark boyut, kapasite ve ek özelliklerdir.</p>
+  </div>
+
+  <div class="models-sticky-wrap" id="modelsWrapper">
+    <div class="models-sticky" id="modelsSticky">
+
+      <!-- LEFT VISUAL -->
+      <div class="model-visual-pane">
+        <!-- SMILE -->
+        <div class="model-vis mv-bg-smile active" id="mv-smile">
+          <div class="mv-emoji">🚐</div>
+          <div class="model-id-display">
+            <div class="model-num-big">333</div>
+            <div class="model-name-big">Smile</div>
+            <div class="model-tagline-big">Kompakt · Çevik · Özgür</div>
+          </div>
+          <div class="model-size-strip">
+            <div class="mss-length">3.33m</div>
+            <div><div class="mss-label">İç Uzunluk</div><div style="color:rgba(255,255,255,.4);font-size:.8rem">Çift kişilik</div></div>
+          </div>
+        </div>
+        <!-- MOODZ -->
+        <div class="model-vis mv-bg-moodz" id="mv-moodz">
+          <div class="mv-emoji">🏕️</div>
+          <div class="model-id-display">
+            <div class="model-num-big">360</div>
+            <div class="model-name-big">Moodz</div>
+            <div class="model-tagline-big">Dengeli · Konforlu · Esnek</div>
+          </div>
+          <div class="model-size-strip">
+            <div class="mss-length">3.60m</div>
+            <div><div class="mss-label">İç Uzunluk</div><div style="color:rgba(255,255,255,.4);font-size:.8rem">Çift + aile</div></div>
+          </div>
+        </div>
+        <!-- UNIQUE -->
+        <div class="model-vis mv-bg-unique" id="mv-unique">
+          <div class="mv-emoji">🌊</div>
+          <div class="model-id-display">
+            <div class="model-num-big">380</div>
+            <div class="model-name-big">Unique</div>
+            <div class="model-tagline-big">Tam Donanım · Aile · Tercih No.1</div>
+          </div>
+          <div class="model-size-strip">
+            <div class="mss-length">3.80m</div>
+            <div><div class="mss-label">İç Uzunluk</div><div style="color:rgba(255,255,255,.4);font-size:.8rem">Aile modeli</div></div>
+          </div>
+        </div>
+        <!-- UTOPIA -->
+        <div class="model-vis mv-bg-utopia" id="mv-utopia">
+          <div class="mv-emoji">🌅</div>
+          <div class="model-id-display">
+            <div class="model-num-big">423</div>
+            <div class="model-name-big">Utopia</div>
+            <div class="model-tagline-big">Premium · Geniş · Zirvede</div>
+          </div>
+          <div class="model-size-strip">
+            <div class="mss-length">4.23m</div>
+            <div><div class="mss-label">İç Uzunluk</div><div style="color:rgba(255,255,255,.4);font-size:.8rem">Premium aile</div></div>
+          </div>
+        </div>
+        <!-- LUXURY EASTER EGG -->
+        <div class="model-vis mv-bg-luxury luxury-egg" id="mv-luxury">
+          <div class="mv-emoji">🏆</div>
+          <div class="luxury-lock">
+            <div class="luxury-lock-icon">🔒</div>
+            <div class="luxury-lock-title">420 Luxury</div>
+          </div>
+          <div class="model-size-strip">
+            <div class="mss-length">4.20m</div>
+            <div><div class="mss-label" style="color:rgba(255,255,255,.3)">Efsane</div></div>
+          </div>
+        </div>
+
+        <!-- model dots -->
+        <div class="model-dots" id="modelDots">
+          <div class="model-dot active" onclick="jumpModel(0)"></div>
+          <div class="model-dot" onclick="jumpModel(1)"></div>
+          <div class="model-dot" onclick="jumpModel(2)"></div>
+          <div class="model-dot" onclick="jumpModel(3)"></div>
+          <div class="model-dot" onclick="jumpModel(4)"></div>
+        </div>
+      </div>
+
+      <!-- RIGHT CONFIG -->
+      <div class="model-config-pane">
+        <div class="models-progress"><div class="models-progress-fill" id="modelProgress"></div></div>
+
+        <!-- SMILE CONFIG -->
+        <div class="model-config-slot active" id="mc-smile">
+          <div class="mc-index">Model 01 / 04</div>
+          <h2 class="mc-h2">333 Smile</h2>
+          <p class="mc-sub">Serenity'nin en kompakt ve çevik modeli. İkili kaçamalıklar ve hafta sonu kampçılığı için mükemmel başlangıç.</p>
+          <div class="mc-section">
+            <div class="mc-section-title">Baz Donanım (Tüm Modeller)</div>
+            <ul class="mc-list">
+              <li>Daldırma Galvaniz Çelik Şase</li>
+              <li>Alko & Knott Şase Tertibatı</li>
+              <li>XPS-CTP Yalıtımlı Paneller (−40/+60°C)</li>
+              <li>Çift Kat Poliplastik Karavan Camları</li>
+              <li>Marin Kontra Mobilyalar</li>
+              <li>Ayous Tropikal Ağaç Gövde</li>
+              <li>Dizel Ortam Isıtıcı</li>
+              <li>Gazlı Su Isıtıcı</li>
+              <li>Dıştan Kasetli Tuvalet</li>
+            </ul>
+          </div>
+          <div class="mc-section">
+            <div class="mc-section-title">333 Smile — Özel Donanım</div>
+            <ul class="mc-list">
+              <li>205W Mono Kristal Panel + 100A Jel Akü + 20A MPPT + 1000W Sinüs İnvertör</li>
+              <li>12V 90 LT Yat Tipi Buzdolabı</li>
+              <li>3 × İthal Karavan Kapısı (50×120cm)</li>
+              <li>40×40 Tavan Heki · 28×28 Fanlı (banyo) · 32×32 Fanlı (mutfak)</li>
+              <li>Yat-Karavan Tipi Ocak-Evye</li>
+            </ul>
+          </div>
+          <div class="mc-highlight">✦ 333 Smile — İkili kaçamalıklar ve hafta sonu tatilleri için Serenity kalitesiyle ilk adım.</div>
+        </div>
+
+        <!-- MOODZ CONFIG -->
+        <div class="model-config-slot" id="mc-moodz">
+          <div class="mc-index">Model 02 / 04</div>
+          <h2 class="mc-h2">360 Moodz</h2>
+          <p class="mc-sub">Daha fazla yaşam alanı, aynı Serenity kalitesi. Uzun karavana geçiş için mükemmel orta nokta.</p>
+          <div class="mc-section">
+            <div class="mc-section-title">Tüm Smile Donanımı +</div>
+            <ul class="mc-list">
+              <li>Genişletilmiş iç yaşam alanı ve uyku bölgesi</li>
+              <li>İki ayrı uyku konfigürasyonu seçeneği</li>
+              <li>Daha geniş mutfak tezgahı ve depolama</li>
+              <li>ABL Dış Su Dolum sistemi</li>
+              <li>Genişletilmiş banyo bölmesi</li>
+            </ul>
+          </div>
+          <div class="mc-section">
+            <div class="mc-section-title">Güneş & Elektrik</div>
+            <ul class="mc-list">
+              <li>205W Mono Kristal Panel</li>
+              <li>100A Jel Akü + 20A MPPT</li>
+              <li>1000W Tam Sinüs İnvertör</li>
+              <li>Transfer Switch</li>
+            </ul>
+          </div>
+          <div class="mc-highlight">✦ 360 Moodz — Hafif, manevra kabiliyetli, ama Smile'dan belirgin şekilde daha konforlu.</div>
+        </div>
+
+        <!-- UNIQUE CONFIG -->
+        <div class="model-config-slot" id="mc-unique">
+          <div class="mc-index">Model 03 / 04</div>
+          <h2 class="mc-h2">380 Unique</h2>
+          <p class="mc-sub">En çok tercih edilen model. Hem güneş enerjisi hem su sistemi hem de konfor açısından en kapsamlı donanım.</p>
+          <div class="mc-section">
+            <div class="mc-section-title">Güneş & Elektrik</div>
+            <ul class="mc-list">
+              <li>Hegel Marka 1000W Kumandalı Tam Sinüs İnvertör</li>
+              <li>2 × 205W Mono Kristal Panel</li>
+              <li>200 Amper Jel Akü</li>
+              <li>30 Amper MPPT + Transfer Switch</li>
+              <li>Yanmaz Marin Elektrik Tesisatı</li>
+            </ul>
+          </div>
+          <div class="mc-section">
+            <div class="mc-section-title">Su & Isı</div>
+            <ul class="mc-list">
+              <li>Whale Marka Sıcak-Soğuk Su Tesisatı</li>
+              <li>70 LT Fiamma Temiz Su Deposu</li>
+              <li>ABL Dış Su Dolum + Citywater</li>
+              <li>Sıcak-Soğuk Dış Duş + Dış 220V Giriş</li>
+            </ul>
+          </div>
+          <div class="mc-section">
+            <div class="mc-section-title">İç Konfor</div>
+            <ul class="mc-list">
+              <li>Hartal Karavan Kapısı (sineklik dahil)</li>
+              <li>40×40 Tavan Heki · 28×28 Fanlı · 32×32 Ledli Klima</li>
+              <li>Kaizer 12V 95 LT Yat Tipi Buzdolabı</li>
+              <li>Soft Close Menteşeler · Özel Döşemeler</li>
+              <li>12V USB'li Okuma Lambaları · Buzdolabı Menfezi</li>
+            </ul>
+          </div>
+          <div class="mc-highlight">✦ 380 Unique — En çok tercih edilen model. Ailenizle uzun yolculuklar için eksiksiz.</div>
+        </div>
+
+        <!-- UTOPIA CONFIG -->
+        <div class="model-config-slot" id="mc-utopia">
+          <div class="mc-index">Model 04 / 04</div>
+          <h2 class="mc-h2">423 Utopia</h2>
+          <p class="mc-sub">Serenity'nin zirvesi. Uzun süreli seyahat ve en üst konfor. Karavan değil — hareket eden ev.</p>
+          <div class="mc-section">
+            <div class="mc-section-title">Tüm Unique Donanımı +</div>
+            <ul class="mc-list">
+              <li>Genişletilmiş Ayous Gövde — daha geniş iç hacim</li>
+              <li>Ayrı uyku bölmesi + oturma odası ayrımı</li>
+              <li>Premium mutfak — geniş çalışma tezgahı</li>
+              <li>Full banyo bölmesi — sabit duşakabin seçeneği</li>
+              <li>2 × 205W panel + 200A akü güneş sistemi</li>
+              <li>Dış tekne görünümlü boya ve kaplama opsiyonları</li>
+            </ul>
+          </div>
+          <div class="mc-highlight">✦ 423 Utopia — Karavanın değil, bir yaşam biçiminin zirvesi. Serenity'nin en büyük ve en tam modeli.</div>
+        </div>
+
+        <!-- LUXURY EASTER EGG CONFIG -->
+        <div class="model-config-slot" id="mc-luxury">
+          <div class="mc-index" style="color:rgba(255,255,255,.2)">Gizli Model</div>
+          <h2 class="mc-h2" style="color:rgba(255,255,255,.25)">420 Luxury</h2>
+          <p class="mc-sub" style="color:rgba(255,255,255,.25)">Efsane Kapalıdır</p>
+          <div class="mc-section">
+            <div class="mc-section-title" style="color:rgba(255,255,255,.15)">Bu sayfayı buldunuz mu?</div>
+            <div class="mc-highlight" style="border-color:rgba(255,255,255,.08);background:rgba(255,255,255,.03)">
+              <p style="color:rgba(255,255,255,.4);font-style:italic">
+                Bir dönem Serenity'nin en prestijli modeli olan 420 Luxury, artık seri üretimde yer almıyor.<br/><br/>
+                Ama eğer gerçekten özel biri için özel bir şey arıyorsanız... Akın'a danışabilirsiniz. Belki özel üretim yapılır. Belki yapılmaz. O da karar verir. 🙂
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PARALLAX QUOTE 3 ═══ -->
+<div class="pq-band" data-pq="2">
+  <div class="pq-bg"><div class="pq-bg-inner pq-bg-2"></div></div>
+  <div class="pq-overlay"></div>
+  <div class="pq-content">
+    <span class="pq-mark">"</span>
+    <p class="pq-text">Karavancı olmak kolay.<br/>Serenity'ci olmak ayrı bir şey.</p>
+    <p class="pq-attr">— Serenity Ailesi</p>
+  </div>
+</div>
+
+<!-- ═══ HİKAYE ═══ -->
+<section id="hikaye">
+  <div class="hikaye-wrap">
+    <div class="hikaye-photo-wrap rv rv-l">
+      <div class="hikaye-photo-box">
+        <img src="assets/images/akin-cam.jpg" alt="Akın Çam — Serenity Karavan Kurucusu"
+             style="width:100%;height:100%;object-fit:cover;object-position:top center"/>
+      </div>
+      <div class="hikaye-float">
+        <div class="hikaye-float-n">7</div>
+        <div class="hikaye-float-l">Hata<br/>1 Prototip</div>
+      </div>
+    </div>
+    <div class="hikaye-text rv rv-r">
+      <div class="s-tag">Kurucu / Akın Çam</div>
+      <h2 class="s-h2">Kendine göre bir<br/><em>karavan arayışı</em></h2>
+      <div class="s-rule"></div>
+      <p>Her şey çok basit bir soruyla başladı: <em>Kaliteli bir karavan var mı piyasada?</em> Akın Çam, yıllarca aradı. Bulamadı. Ya pahalı ithal, ya ucuz yerli — ortada istediği şey yoktu.</p>
+      <blockquote class="hikaye-pull">"Bir prototip yapmaya karar verdim. 7 karavan üretiminin harcayan hatalar yaptım. Ama şu an elimde olmasını istediğim şeyi artık biliyorum."</blockquote>
+      <p>Bu inatla ve doğruluğu bulana kadar vazgeçmemeyle ortaya çıktı Serenity. Akın bugün de aynı tutkuyla, her karavanın üzerinde bizzat çalışır. Kalite kontrolü kendisi yapar.</p>
+      <blockquote class="hikaye-pull">"Herkese karavan satmıyorum. Çünkü sattığım her karavanın arkasında duruyorum — bu sorumluluk, satış değil, dostluktur."</blockquote>
+      <a href="https://www.instagram.com/serenitykaravan/" target="_blank" class="btn-solid" style="display:inline-flex;align-items:center;gap:10px;margin-top:8px">
+        📷 Instagram'da Takip Et
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTİMONYALLAR ═══ -->
+<section id="testimonials">
+  <div class="test-header rv">
+    <div class="s-tag" style="color:var(--teal)">Serenity Topluluğu</div>
+    <h2 class="s-h2" style="color:#fff">Müşteri değil, <em style="color:var(--teal)">dost.</em></h2>
+  </div>
+  <div class="test-track">
+    <div class="t-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-body">"333 Smile ile ilk kampımda şunu anladım: bu sadece bir karavan değil. Akın'ın tuttuğu her söz, her detayda karşılık buluyor. 5 yıl geçti, tek bir sorun yaşamadım."</p>
+      <div class="t-footer"><div class="t-av">MT</div><div><div class="t-name">Murat Tekin</div><div class="t-model-tag">333 Smile · 2020</div></div></div>
+    </div>
+    <div class="t-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-body">"380 Unique ile kışın Kapadokya'ya gittik. Dışarıda −12 derece, içeride rahatça çay içiyorduk. Piyasadan aldığımız eski karavanla bunu hayal bile edemezdik."</p>
+      <div class="t-footer"><div class="t-av">AY</div><div><div class="t-name">Ayşe & Tolga Yılmaz</div><div class="t-model-tag">380 Unique · 2022</div></div></div>
+    </div>
+    <div class="t-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-body">"Üç farklı karavan aldım hayatımda. Serenity sonuncu — çünkü bir daha değiştirme ihtiyacı hissetmeyeceğim. Akın'ın 'herkese satmıyorum' dediğini ilk duyduğumda kızdım. Şimdi anlıyorum."</p>
+      <div class="t-footer"><div class="t-av">SK</div><div><div class="t-name">Savaş Kılıç</div><div class="t-model-tag">423 Utopia · 2023</div></div></div>
+    </div>
+    <div class="t-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-body">"12 gün şarj edilmeden, şebeke olmadan çalıştığını görünce soru işareti silindi. Serenity vaadini tutuyor."</p>
+      <div class="t-footer"><div class="t-av">EB</div><div><div class="t-name">Emre Bulut</div><div class="t-model-tag">360 Moodz · 2023</div></div></div>
+    </div>
+    <div class="t-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-body">"Mobilyalar ilk gün gibi. Nem, yağmur, sıcak — hiçbiri iz bırakmamış. Başka markalar 2 yılda şişmeye başlamıştı. Marin kontra farkı buymuş."</p>
+      <div class="t-footer"><div class="t-av">HG</div><div><div class="t-name">Hande Güler</div><div class="t-model-tag">333 Smile · 2021</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ INSTAGRAM ═══ -->
+<section id="instagram">
+  <div class="ig-inner">
+    <div class="ig-header">
+      <div>
+        <div class="ig-handle"><span>@serenitykaravan</span></div>
+        <h2 class="s-h2 rv">Yolda ne var,<br/><em>görmek ister misin?</em></h2>
+      </div>
+      <div class="rv rv-r" style="max-width:340px">
+        <p style="font-size:.95rem;color:var(--mist);line-height:1.75">Akın her şeyi paylaşır — üretim süreci, kampçılık anları, malzeme testleri ve zaman zaman kendine özgü karavanize sorular.</p>
+        <a href="https://www.instagram.com/serenitykaravan/" target="_blank" class="btn-ig" style="display:inline-flex;margin-top:24px">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Takip Et · @serenitykaravan
+        </a>
+      </div>
+    </div>
+
+    <!--
+      ══════════════════════════════════════════════════════════════════
+      ELFSIGHT INSTAGRAM FEED — Canlı Instagram içerikleri
+      ──────────────────────────────────────────────────────────────────
+      KURULUM (5 dakika, ücretsiz):
+      1. elfsight.com adresine git → "Instagram Feed" widget'ını seç
+      2. "Instagram Source" → @serenitykaravan hesabını bağla
+      3. Layout: Grid | Columns: 4 | Rows: 2 | Show header: OFF
+         Show follow button: OFF (bizimki zaten var)
+      4. "Publish" → widget kodunu kopyala
+      5. Aşağıdaki iki satırı (script + div) Elfsight'ın verdiği kodla değiştir
+      ══════════════════════════════════════════════════════════════════
+    -->
+    <div class="ig-feed-wrap rv">
+      <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-0b0718f8-d99c-4f5a-afbf-b8d71cb89aa8" data-elfsight-app-lazy></div>
+
+      <!--
+        Elfsight bağlanana kadar (veya bağlanamazsa) görünen fallback:
+        Elfsight yüklenince bu div otomatik gizlenir, widget onu doldurur.
+      -->
+      <div class="ig-fallback" id="igFallback">
+        <p>Instagram içerikleri yükleniyor...</p>
+        <a href="https://www.instagram.com/serenitykaravan/" target="_blank" class="btn-ig" style="margin-top:16px;display:inline-flex">
+          Instagram'da Görüntüle
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ SSS ═══ -->
+<section id="sss">
+  <div class="sss-inner">
+    <div class="sss-left">
+      <div class="s-tag rv">SSS</div>
+      <h2 class="s-h2 rv">Aklınızdaki<br/><em>her soruyu</em><br/>sordunuz mu?</h2>
+      <div class="s-rule rv"></div>
+      <p class="s-sub rv">Akın'a en çok sorulan sorular. Cevabını bulamadıysanız WhatsApp'tan yazın.</p>
+      <div class="rv" style="margin-top:32px">
+        <a href="https://wa.me/905322129316" target="_blank" class="btn-solid" style="display:inline-flex;align-items:center;gap:8px">
+          💬 WhatsApp'tan Sor
+        </a>
+      </div>
+    </div>
+    <div class="sss-right">
+      <div class="acc-item rv"><button class="acc-q" onclick="acc(this)">Serenity neden diğer yerli karavanlardan farklı?<span class="acc-icon">+</span></button><div class="acc-a"><div class="acc-a-inner">Serenity, kendi özel XPS-CTP panellerini kullanır, tüm tesisatı marin (deniz) standartlarında kurar ve her modelde özgün tasarım uygular. Karbon kopya üretimi ve ucuz malzeme kullanımı kesinlikle yoktur. Sizi bir müşteri değil, topluluğun parçası olarak görürüz.</div></div></div>
+      <div class="acc-item rv"><button class="acc-q" onclick="acc(this)">Karavanlar 4 mevsim kullanıma uygun mu?<span class="acc-icon">+</span></button><div class="acc-a"><div class="acc-a-inner">Evet. Tüm Serenity modellerinde −20°C ile +50°C arasında üstün performans sağlayan kendi üretimimiz XPS-CTP panel sistemi kullanılır. Dizel ortam ısıtıcısı ve çok katmanlı yalıtım ile kış kampçılığı da tam konforludur.</div></div></div>
+      <div class="acc-item rv"><button class="acc-q" onclick="acc(this)">12V sistem ne demek, neden önemli?<span class="acc-icon">+</span></button><div class="acc-a"><div class="acc-a-inner">Tüm elektrikli cihazlar 12 volt DC ile çalışır. Güneş panellerinden gelen enerji doğrudan kullanılır; inverter dönüştürme kaybı olmaz. 205W+ güneş paneli ve jel akü ile şebeke olmadan günlerce bağımsız yaşanabilir.</div></div></div>
+      <div class="acc-item rv"><button class="acc-q" onclick="acc(this)">Marin malzeme kullanımı ne anlama geliyor?<span class="acc-icon">+</span></button><div class="acc-a"><div class="acc-a-inner">Tekne ve deniz araçlarında kullanılan malzemeler sürekli nem ve su temasına göre tasarlanır. Serenity'de tüm elektrik ekipmanları, su tesisat aksamı ve mobilya gövdeleri marin standarttadır. Hiçbir zaman kabarmaz, paslanmaz.</div></div></div>
+      <div class="acc-item rv"><button class="acc-q" onclick="acc(this)">Herkese karavan satıyor musunuz?<span class="acc-icon">+</span></button><div class="acc-a"><div class="acc-a-inner">Açıkçası hayır. Akın, bir topluluk inşa ettiğini düşünür. Her müşterinin ihtiyacını önce anlamak, ardından doğru eşleşmeyi kurmak ister. İyi bir uyum varsa ilerlenir. Bu hem sizin hem de bizim için daha iyi bir deneyim.</div></div></div>
+      <div class="acc-item rv"><button class="acc-q" onclick="acc(this)">Teslim süresi ne kadar?<span class="acc-icon">+</span></button><div class="acc-a"><div class="acc-a-inner">Mevcut stok ve sipariş durumuna göre 2 ila 8 hafta arasında değişir. Her karavan bireysel olarak üretildiğinden teslim tarihi talep formunda belirtilir ve kesinleştirilir.</div></div></div>
+      <div class="acc-item rv"><button class="acc-q" onclick="acc(this)">Ayous ağacı gövde neden avantajlı?<span class="acc-icon">+</span></button><div class="acc-a"><div class="acc-a-inner">Ayous hem hafif hem son derece dayanıklı, neme dirençli tropikal bir ağaçtır. Boyutlarına rağmen Serenity karavanlar, piyasadaki pek çok küçük rakibinden daha az ağırlık taşır. Daha hafif = daha az yakıt, daha güvenli frenleme.</div></div></div>
+      <div class="acc-item rv"><button class="acc-q" onclick="acc(this)">İthal karavan yerine Serenity neden tercih edilmeli?<span class="acc-icon">+</span></button><div class="acc-a"><div class="acc-a-inner">İthal karavanlar genelde standart, konfigürasyon esnekliği az modellerdir. Serenity aynı kalite düzeyinde malzeme kullanırken yerli üretimin avantajıyla konfigürasyon özgürlüğü, satış sonrası yakınlık ve Türkiye şartlarına uyarlanmış tasarım sunar.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TEKLİF ═══ -->
+<section id="teklif">
+  <div class="teklif-inner">
+    <div class="teklif-pitch">
+      <div class="s-tag rv">Teklif Al</div>
+      <h2 class="s-h2 rv">Serenity'ci misin?<br/><em>Öğrenelim.</em></h2>
+      <div class="s-rule rv"></div>
+      <p class="rv">Formu doldurun. Akın mümkün olan en kısa sürede size dönecek — sadece fiyat listesi göndermek için değil, gerçekten tanımak için.</p>
+      <p class="rv">Doğru bir eşleşme varsa, harika bir karavan ve bir topluluk sizi bekliyor.</p>
+      <div class="teklif-promise rv">
+        <div class="teklif-promise-icon">🤝</div>
+        <p>Her teklif talebi kişisel olarak değerlendirilir. Toplu mesaj veya bot cevabı almayacaksınız.</p>
+      </div>
+      <div class="teklif-promise rv" style="margin-top:10px">
+        <div class="teklif-promise-icon">📍</div>
+        <p>Bursa'dayız. Yerinde görmek isterseniz fabrikayı ziyaret edebilirsiniz.</p>
+      </div>
+    </div>
+    <div class="form-box rv">
+      <h3>Teklif Talebi</h3>
+      <form name="teklif" method="POST" data-netlify="true" id="teklifForm">
+        <input type="hidden" name="form-name" value="teklif"/>
+        <div class="fg-row">
+          <div class="fg"><label>Ad Soyad *</label><input type="text" name="ad" id="fad" placeholder="Adınız" required/></div>
+          <div class="fg"><label>Telefon *</label><input type="tel" name="tel" id="ftel" placeholder="+90 5XX..." required/></div>
+        </div>
+        <div class="fg"><label>E-posta (opsiyonel)</label><input type="email" name="email" id="femail" placeholder="ornek@email.com"/></div>
+        <div class="fg">
+          <label>İlgilendiğiniz Model *</label>
+          <select name="model" id="fmodel" required>
+            <option value="">Model seçin...</option>
+            <option>333 Smile</option>
+            <option>360 Moodz</option>
+            <option>380 Unique</option>
+            <option>423 Utopia</option>
+            <option>Henüz karar vermedim</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>İstenen Teslim Süresi</label>
+          <select name="tarih" id="ftarih">
+            <option>Hemen teslim</option>
+            <option>2–4 hafta</option>
+            <option>4–6 hafta</option>
+            <option>6–8 hafta</option>
+            <option>Esnek</option>
+          </select>
+        </div>
+        <div class="fg"><label>Mesajınız</label><textarea name="mesaj" id="fmesaj" placeholder="Kullanım amacınız, sorularınız..."></textarea></div>
+        <button type="submit" class="btn-wa-submit">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.105 1.523 5.83L.057 23.428a.5.5 0 0 0 .612.612l5.598-1.466A11.952 11.952 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.52-5.16-1.424l-.37-.22-3.827 1.003 1.022-3.724-.242-.384A9.957 9.957 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          WhatsApp'tan Teklif Al
+        </button>
+        <p class="form-note">Form gönderildiğinde Netlify'a kaydedilir ve WhatsApp açılır.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="f-brand">
+      <img src="assets/images/logo.png" alt="Serenity Karavan" class="footer-logo-img" width="52" height="52"/>
+      <div class="f-logo-text">Serenity Karavan</div>
+      <p>İthal kalitesinde yerli üretim. Marin malzeme, özel yalıtım, off-grid özgürlük. Türkiye'nin en kaliteli çekme karavan üreticisi.</p>
+      <div class="f-social">
+        <a href="https://www.instagram.com/serenitykaravan/" target="_blank" class="f-soc">📷</a>
+        <a href="https://www.facebook.com/serenitykaravan" target="_blank" class="f-soc">📘</a>
+        <a href="https://www.youtube.com/@SerenityKaravan" target="_blank" class="f-soc">▶️</a>
+        <a href="https://maps.app.goo.gl/5DuyXmYCDMAiUZgg8" target="_blank" class="f-soc">📍</a>
+      </div>
+    </div>
+    <div class="f-col"><h5>Modeller</h5><ul class="f-links"><li><a href="#modeller">333 Smile</a></li><li><a href="#modeller">360 Moodz</a></li><li><a href="#modeller">380 Unique</a></li><li><a href="#modeller">423 Utopia</a></li></ul></div>
+    <div class="f-col"><h5>Keşfet</h5><ul class="f-links"><li><a href="#kalite">Serenity Kalitesi</a></li><li><a href="#hikaye">Akın'ın Hikayesi</a></li><li><a href="#testimonials">Topluluk</a></li><li><a href="#instagram">Instagram</a></li><li><a href="#sss">SSS</a></li><li><a href="#teklif">Teklif Al</a></li></ul></div>
+    <div class="f-col"><h5>İletişim</h5>
+      <div class="f-contact-row">📞 <a href="tel:+905322129316">+90 532 212 93 16</a></div>
+      <div class="f-contact-row">💬 <a href="https://wa.me/905322129316" target="_blank">WhatsApp</a></div>
+      <div class="f-contact-row">📍 <a href="https://maps.app.goo.gl/5DuyXmYCDMAiUZgg8" target="_blank">Bademli Mah., Bursa</a></div>
+      <div class="f-contact-row">🕐 Pzt–Cts: 09:00–18:00</div>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <span>© 2024 Serenity Karavan. Tüm hakları saklıdır.</span>
+    <span style="color:var(--teal)">Türkiye'nin En Kaliteli Yerli Karavan Üreticisi</span>
+  </div>
+</footer>
+
+<a href="https://wa.me/905322129316" target="_blank" class="wa-btn">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.105 1.523 5.83L.057 23.428a.5.5 0 0 0 .612.612l5.598-1.466A11.952 11.952 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.52-5.16-1.424l-.37-.22-3.827 1.003 1.022-3.724-.242-.384A9.957 9.957 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<script>
+/* ── NAV ── */
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>48)},{passive:true});
+function openMob(){document.getElementById('mobNav').classList.add('open')}
+function closeMob(){document.getElementById('mobNav').classList.remove('open')}
+
+/* ── REVEAL ── */
+const ro=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')});
+},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
+
+/* ── COUNTERS ── */
+function cnt(id,target,delay=0){
+  const el=document.getElementById(id);if(!el)return;
+  setTimeout(()=>{
+    let v=0,step=target/60;
+    const t=setInterval(()=>{v=Math.min(v+step,target);el.textContent=Math.floor(v);if(v>=target)clearInterval(t)},25);
+  },delay);
+}
+const heroObs=new IntersectionObserver(e=>{
+  if(e[0].isIntersecting){
+    cnt('c1',200,200);cnt('c2',10,400);cnt('c3',100,600);
+    cnt('s1',200,200);cnt('s2',10,400);
+    heroObs.disconnect();
+  }
+},{threshold:.2});
+heroObs.observe(document.getElementById('hero'));
+
+/* ── PARALLAX BANDS ── */
+document.querySelectorAll('.pq-band').forEach(band=>{
+  const bg=band.querySelector('.pq-bg');
+  window.addEventListener('scroll',()=>{
+    const r=band.getBoundingClientRect();
+    if(r.bottom<0||r.top>innerHeight)return;
+    const p=(innerHeight-r.top)/(innerHeight+r.height);
+    bg.style.transform=`translateY(${(p-.5)*28}%)`;
+  },{passive:true});
+});
+
+/* ══════════════════════════════════════════
+   SERENITY KALİTESİ — SCROLL DRIVER
+══════════════════════════════════════════ */
+const KALITE_N=6;
+const kaliteWrapper=document.getElementById('kaliteWrapper');
+// Set total scroll height = N features + 1 viewport
+const setupKalite=()=>{
+  kaliteWrapper.style.height=(KALITE_N+1)*100+'vh';
+};
+setupKalite();
+
+let curKalite=-1;
+function setKalite(idx){
+  if(idx===curKalite)return;
+  curKalite=idx;
+  for(let i=0;i<KALITE_N;i++){
+    document.getElementById('ki'+i).classList.toggle('active',i===idx);
+    document.getElementById('kt'+i).classList.toggle('active',i===idx);
+  }
+  document.querySelectorAll('#kaliteDots .kalite-dot').forEach((d,i)=>{
+    d.classList.toggle('active',i===idx);
+  });
+}
+function jumpKalite(idx){
+  const wRect=kaliteWrapper.getBoundingClientRect();
+  const scrollTarget=scrollY+wRect.top+(idx/KALITE_N*(KALITE_N)*innerHeight)+10;
+  window.scrollTo({top:scrollTarget,behavior:'smooth'});
+}
+
+function onScrollKalite(){
+  const wRect=kaliteWrapper.getBoundingClientRect();
+  if(wRect.top>innerHeight||wRect.bottom<0)return;
+  // progress through the sticky section
+  const scrolled=-wRect.top; // 0 at entry, N*vh at exit
+  const progress=scrolled/(KALITE_N*innerHeight);
+  const idx=Math.min(Math.max(Math.floor(progress*KALITE_N),0),KALITE_N-1);
+  setKalite(idx);
+}
+window.addEventListener('scroll',onScrollKalite,{passive:true});
+onScrollKalite();
+
+/* ══════════════════════════════════════════
+   MODELLER — SCROLL DRIVER
+══════════════════════════════════════════ */
+const MODEL_IDS=['smile','moodz','unique','utopia','luxury'];
+const MODEL_N=MODEL_IDS.length;
+const modelsWrapper=document.getElementById('modelsWrapper');
+const setupModels=()=>{
+  modelsWrapper.style.height=(MODEL_N+1)*100+'vh';
+};
+setupModels();
+
+let curModel=-1;
+function setModel(idx){
+  if(idx===curModel)return;
+  curModel=idx;
+  MODEL_IDS.forEach((id,i)=>{
+    document.getElementById('mv-'+id).classList.toggle('active',i===idx);
+    document.getElementById('mc-'+id).classList.toggle('active',i===idx);
+  });
+  document.querySelectorAll('#modelDots .model-dot').forEach((d,i)=>{
+    d.classList.toggle('active',i===idx);
+  });
+  // progress bar
+  const fill=document.getElementById('modelProgress');
+  if(fill)fill.style.height=((idx+1)/MODEL_N*100)+'%';
+}
+function jumpModel(idx){
+  const wRect=modelsWrapper.getBoundingClientRect();
+  const scrollTarget=scrollY+wRect.top+(idx/MODEL_N*MODEL_N*innerHeight)+10;
+  window.scrollTo({top:scrollTarget,behavior:'smooth'});
+}
+function onScrollModels(){
+  const wRect=modelsWrapper.getBoundingClientRect();
+  if(wRect.top>innerHeight||wRect.bottom<0)return;
+  const scrolled=-wRect.top;
+  const progress=scrolled/(MODEL_N*innerHeight);
+  const idx=Math.min(Math.max(Math.floor(progress*MODEL_N),0),MODEL_N-1);
+  setModel(idx);
+}
+window.addEventListener('scroll',onScrollModels,{passive:true});
+onScrollModels();
+
+/* ── ACCORDION ── */
+function acc(btn){
+  const item=btn.closest('.acc-item');
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.acc-item.open').forEach(i=>i.classList.remove('open'));
+  if(!isOpen)item.classList.add('open');
+}
+
+/* ── FORM ── */
+document.getElementById('teklifForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const ad=document.getElementById('fad').value;
+  const tel=document.getElementById('ftel').value;
+  const email=document.getElementById('femail').value;
+  const model=document.getElementById('fmodel').value;
+  const tarih=document.getElementById('ftarih').value;
+  const mesaj=document.getElementById('fmesaj').value;
+  // Netlify submit
+  fetch('/',{method:'POST',body:new FormData(this)}).catch(()=>{});
+  // WhatsApp
+  const msg=encodeURIComponent(
+    `Merhaba, serenitykaravan.com üzerinden teklif talebi!\n\nAd: ${ad}\nTel: ${tel}`+
+    (email?`\nEmail: ${email}`:'')+`\nModel: ${model}\nTeslim: ${tarih}`+
+    (mesaj?`\nNot: ${mesaj}`:'')
+  );
+  window.open(`https://wa.me/905322129316?text=${msg}`,'_blank');
+});
+</script>
+</body>
+</html>
